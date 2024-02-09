@@ -24,7 +24,7 @@ echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo -e
 echo -e "${BlueCyan}              Menu Backup                   "
 echo -e
-echo -e "            t.me/bijiOntaTerbangG"
+echo -e "            t.me/Sabdopalonstore"
 echo -e "${ungu}++++++++++++++++++++++++++++++++++++++++++++"
 echo
 echo
@@ -47,7 +47,7 @@ figlet "backup" | lolcat
 backup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script Raden Rizki"
+echo "Terimakasih sudah menggunakan layanan script SABDO PALON"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -58,7 +58,7 @@ figlet "Restore" | lolcat
 restore
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script Raden Rizki"
+echo "Terimakasih sudah menggunakan layanan script SABDO PALON"
 echo
 echo "--------------------------------------------------------"
 fi
