@@ -68,7 +68,7 @@ figlet "strt"
 strt
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script Raden Rizki"
+echo "Terimakasih sudah menggunakan layanan script SABDO PALON"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -77,7 +77,7 @@ then
 limitspeed
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script Raden Rizki"
+echo "Terimakasih sudah menggunakan layanan script SABDO PALON"
 echo
 echo "--------------------------------------------------------"
 fi
@@ -87,7 +87,7 @@ then
 autobackup
 echo "--------------------------------------------------------"
 echo
-echo "Terimakasih sudah menggunakan layanan script Raden Rizki"
+echo "Terimakasih sudah menggunakan layanan script SABDO PALON"
 echo
 echo "--------------------------------------------------------"
 fi
