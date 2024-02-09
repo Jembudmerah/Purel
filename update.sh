@@ -10,7 +10,7 @@ if [ "$(systemd-detect-virt)" == "openvz" ]; then
 fi
 echo ""
 version=$(cat /home/ver)
-ver=$( curl https://raw.githubusercontent.com/R2GANTENG/Bijivps/main/version )
+ver=$( curl https://raw.githubusercontent.com/Jembudmerah/Purel/main/version )
 clear
 # LINE COLOUR
 line=$(cat /etc/line)
