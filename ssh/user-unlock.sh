@@ -1,5 +1,90 @@
 #!/bin/bash
+dateFromServer=$(curl -v --insecure --silent https://google.com/ 2>&1 | grep Date | sed -e 's/< Date: //')
+biji=`date +"%Y-%m-%d" -d "$dateFromServer"`
+###########- COLOR CODE -##############
+NC="\e[0m"
+RED="\033[0;31m" 
 
-z="
-";wFz='to u';wEz='033[';jEz='gree';NGz='u $u';CCz=' "$b';Jz='--si';UBz=' -E ';uFz='SERN';eDz='.$Na';NEz='ON (';Sz='grep';pGz='e${N';bDz='r/lo';GDz='erco';fFz='" = ';Az='date';DGz='egre';vCz='.ica';ZBz='prin';iDz='ne=$';AEz='o" ]';LCz=' 864';hFz='"\e[';TCz='en';yFz='k: "';RBz='/roo';VEz='P)';JBz='ipmi';KGz='-eq ';EDz='gith';NFz='edup';UGz='e ${';HBz='on/m';SEz='$4}'\''';dGz=' ${g';nGz=' ${b';bBz='}'\''` ';kFz='ng..';xDz='e" =';hGz='D${N';YFz='firs';KCz='2) /';RGz='----';ODz='n/ma';uz=' -sS';oEz='n() ';pBz=' $us';pDz='"/et';OFz=' ]; ';cEz='Deni';Lz=' htt';qz='BURI';tFz='ut U';DHz=' 1';hBz='ata[';yBz='xp" ';GCz='exp2';wGz='C} n';aDz=' /us';bz='biji';cCz='tc/.';wCz='nhaz';DDz='raw.';aFz='exit';xEz='0m";';BGz='rnam';tGz='rest';Tz=' Dat';CDz='s://';SCz='; th';dBz='for ';FGz='e" /';sCz='url ';WGz='}$us';sFz='"Inp';nEz='NC='\''';IFz='3[0m';Kz='lent';VCz='er >';xz='hubu';eGz='reen';vz='/raw';sEz='\033';WDz='rint';Oz='gle.';lGz='User';hCz='/nul';REz='int ';KDz='dyyu';nz='"\03';PBz='=( `';cz='=`da';WBz='# " ';MBz='ot/t';GEz='miss';YGz='me${';XCz='c/.$';gBz='"${d';OBz='data';oBz='^###';Fz='l -v';cBz=')';tz='curl';sDz='n';QFz='red ';gEz=''\''\e[';MCz='00 )';BCz='d2=(';uCz='ipv4';YCz='.ini';rEz='e "\';PEz='awk ';Gz=' --i';TGz='"Use';jDz='(cat';mCz='f /r';DEz='ired';fEz='red=';yEz=' }';Wz='-e '\''';EGz='p "^';Mz='ps:/';ACz='+%s`';Cz='Serv';lDz='Blom';mz='RED=';sz=' {';GBz='issi';LBz=' /ro';FFz='1;1m';NCz='if [';Xz='s/< ';vEz='*}\\';VBz='"^##';WEz=' "$M';NBz='mp';YDz=' $Na';kz='\e[0';lFz='.\e[';fDz='me.i';RFz='"You';Rz='1 | ';gFz=' -ne';dz='te +';rFz=' -p ';Hz='nsec';xBz=' "$e';JEz='pted';lCz='done';AFz='red(';kCz='fi';sBz='mp" ';yGz='ound';cFz='elif';uDz='wo=$';uGz='ored';rz='Q ()';XBz='| aw';IBz='ain/';RDz='i | ';MEz='ISSI';vFz='AME ';QEz=''\''{pr';IEz='Acce';yz='serc';MDz='ermi';qGz='C} h';vBz='`dat';KFz='ON';ZDz='me >';eEz='Q';ZGz='NC} ';lEz='e[1;';KEz='..."';fCz='i > ';mEz='32m'\''';RCz='" ]]';ez='"%Y-';jGz='"Acc';dFz=' [ "';GFz='${*}';eBz='user';dCz='$use';CEz='"Exp';LEz='PERM';CFz=' -e ';FBz='perm';AGz=' use';Qz=' 2>&';QGz=' "--';HEz='ion ';Pz='com/';bCz='f /e';QDz='pmin';DBz='ndyy';KBz='ni >';oGz='lue}';BBz='nt.c';TFz='ript';XGz='erna';oDz=' -f ';Zz=': //';nFz='clea';PCz='" -l';lz='m"';fz='%m-%';nBz='-E "';Uz='e | ';dDz='etc/';EFz='33[3';nCz='oot/';HGz='wd >';BEz='res=';cDz='cal/';TBz='p | ';LFz='/hom';Yz='Date';BHz=' ser';LDz='da/p';iFz='32ml';UDz=' awk';gDz='ni';wz='.git';pEz='{ ec';uEz='1m${';aGz='succ';JDz='m/An';Dz='er=$';xGz='ot f';yCz='om)';TEz=' | g';Nz='/goo';ZEz='$IZI';iBz='@]}"';rCz='=$(c';BFz=') { ';XFz='ate ';rDz=' the';qBz='er" ';pCz='}';ZFz='t !"';aBz='t $2';WFz=' upd';pFz=' " "';bFz=' 0';hz='d "$';oFz='r';wDz='ekOn';hDz='CekO';CHz='ver.';IGz='l';OGz='sern';eCz='r.in';EBz='uda/';MFz='e/ne';oz='3[0;';qEz='ho -';tBz='t $3';bGz='essf';qDz='" ];';kEz='n='\''\';qFz='read';IDz='t.co';VDz=' '\''{p';mGz='name';GGz='pass';SFz='r sc';MGz='wd -';AHz='your';kDz='ni)';VFz='d to';Iz='ure ';nDz=') {';ADz='Name';wBz='e -d';xCz='ip.c';uBz='d1=(';rGz='as b';XDz=' $2}';vDz=' "$C';ABz='onte';JFz='"; }';Ez='(cur';xFz='nloc';jCz='&1';Vz='sed ';bEz='an';gGz='OCKE';tCz='-sS ';iEz='m'\''';FCz='`)';kGz='ess ';PGz='ame';DCz='iji"';aCz='rm -';yDz='ekTw';WCz=' /et';VGz='blue';UCz='echo';hEz='1;31';aEz='N" ]';CBz='om/A';HCz='=$((';NDz='ssio';XEz='YIP"';EEz='"';PDz='in/i';JCz=' - d';FEz='"Per';tDz='CekT';BDz='http';iCz='l 2>';qCz='MYIP';YEz=' = "';mFz='0m"';UEz='$MYI';ECz=' +%s';UFz=' nee';PFz='then';kBz='exp=';HDz='nten';iz='er"`';mDz='an (';sGz='een ';pz='31m"';CGz='e';tEz='[32;';dEz='ed!"';oCz='tmp';LGz='0 ];';jz='NC="';iGz='C}."';jFz='oadi';ZCz='else';SDz=' $MY';az=''\'')';ICz=' (d1';JGz=' $? ';QBz='cat ';HFz='\\03';Bz='From';fGz='}UNL';lBz='( `g';QCz='e "0';OEz='IZIN';OCz='[ "$';rBz='"/ro';DFz='"\\0';cGz='ully';TDz='IP |';vGz='red}';FDz='ubus';mBz='rep ';gCz='/dev';jBz='do';eFz='$res';gz='d" -';SBz='t/tm';fBz=' in ';SGz='-"';YBz='k '\''{';
-eval "$Az$Bz$Cz$Dz$Ez$Fz$Gz$Hz$Iz$Jz$Kz$Lz$Mz$Nz$Oz$Pz$Qz$Rz$Sz$Tz$Uz$Vz$Wz$Xz$Yz$Zz$az$z$bz$cz$dz$ez$fz$gz$hz$Az$Bz$Cz$iz$z$jz$kz$lz$z$mz$nz$oz$pz$z$qz$rz$sz$z$tz$uz$Lz$Mz$vz$wz$xz$yz$ABz$BBz$CBz$DBz$EBz$FBz$GBz$HBz$IBz$JBz$KBz$LBz$MBz$NBz$z$OBz$PBz$QBz$RBz$SBz$TBz$Sz$UBz$VBz$WBz$XBz$YBz$ZBz$aBz$bBz$cBz$z$dBz$eBz$fBz$gBz$hBz$iBz$z$jBz$z$kBz$lBz$mBz$nBz$oBz$pBz$qBz$rBz$MBz$sBz$XBz$YBz$ZBz$tBz$bBz$cBz$z$uBz$vBz$wBz$xBz$yBz$ACz$cBz$z$BCz$vBz$wBz$CCz$DCz$ECz$FCz$z$GCz$HCz$ICz$JCz$KCz$LCz$MCz$cBz$z$NCz$OCz$GCz$PCz$QCz$RCz$SCz$TCz$z$UCz$pBz$VCz$WCz$XCz$eBz$YCz$z$ZCz$z$aCz$bCz$cCz$dCz$eCz$fCz$gCz$hCz$iCz$jCz$z$kCz$z$lCz$z$aCz$mCz$nCz$oCz$z$pCz$z$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$z$ADz$rCz$sCz$tCz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$Sz$SDz$TDz$UDz$VDz$WDz$XDz$az$z$UCz$YDz$ZDz$aDz$bDz$cDz$dDz$eDz$fDz$gDz$z$hDz$iDz$jDz$aDz$bDz$cDz$dDz$eDz$fDz$kDz$z$lDz$mDz$nDz$z$NCz$oDz$pDz$XCz$ADz$YCz$qDz$rDz$sDz$z$tDz$uDz$jDz$WCz$XCz$ADz$YCz$cBz$z$NCz$vDz$wDz$xDz$vDz$yDz$AEz$SCz$TCz$z$BEz$CEz$DEz$EEz$z$kCz$z$ZCz$z$BEz$FEz$GEz$HEz$IEz$JEz$KEz$z$kCz$z$pCz$z$LEz$MEz$NEz$nDz$z$qCz$rCz$sCz$tCz$uCz$vCz$wCz$xCz$yCz$z$OEz$rCz$sCz$tCz$BDz$CDz$DDz$EDz$FDz$GDz$HDz$IDz$JDz$KDz$LDz$MDz$NDz$ODz$PDz$QDz$RDz$PEz$QEz$REz$SEz$TEz$mBz$UEz$VEz$z$NCz$WEz$XEz$YEz$ZEz$aEz$SCz$TCz$z$lDz$bEz$z$ZCz$z$BEz$FEz$GEz$HEz$cEz$dEz$z$kCz$z$qz$eEz$z$pCz$z$fEz$gEz$hEz$iEz$z$jEz$kEz$lEz$mEz$z$nEz$kz$iEz$z$jEz$oEz$pEz$qEz$rEz$sEz$tEz$uEz$vEz$wEz$xEz$yEz$z$AFz$BFz$UCz$CFz$DFz$EFz$FFz$GFz$HFz$IFz$JFz$z$LEz$MEz$KFz$z$NCz$oDz$LFz$MFz$NFz$Az$OFz$PFz$z$QFz$RFz$SFz$TFz$UFz$VFz$WFz$XFz$YFz$ZFz$z$aFz$bFz$z$cFz$dFz$eFz$fFz$FEz$GEz$HEz$IEz$JEz$KEz$OFz$PFz$z$UCz$gFz$z$ZCz$z$QFz$FEz$GEz$HEz$cEz$dEz$z$aFz$bFz$z$kCz$z$UCz$CFz$hFz$iFz$jFz$kFz$lFz$mFz$z$nFz$oFz$z$UCz$pFz$z$UCz$pFz$z$UCz$pFz$z$qFz$rFz$sFz$tFz$uFz$vFz$wFz$xFz$yFz$AGz$BGz$CGz$z$DGz$EGz$dCz$BGz$FGz$dDz$GGz$HGz$gCz$hCz$IGz$z$NCz$JGz$KGz$LGz$rDz$sDz$z$GGz$MGz$NGz$OGz$PGz$z$nFz$oFz$z$UCz$pFz$z$UCz$pFz$z$UCz$pFz$z$UCz$QGz$RGz$RGz$RGz$RGz$RGz$RGz$RGz$RGz$RGz$RGz$SGz$z$UCz$CFz$TGz$BGz$UGz$VGz$WGz$XGz$YGz$ZGz$aGz$bGz$cGz$dGz$eGz$fGz$gGz$hGz$iGz$z$UCz$CFz$jGz$kGz$dBz$lGz$mGz$nGz$oGz$dCz$BGz$pGz$qGz$rGz$sGz$tGz$uGz$EEz$z$UCz$QGz$RGz$RGz$RGz$RGz$RGz$RGz$RGz$RGz$RGz$RGz$SGz$z$ZCz$z$UCz$pFz$z$UCz$CFz$TGz$BGz$UGz$vGz$dCz$BGz$pGz$wGz$xGz$yGz$fBz$AHz$BHz$CHz$EEz$z$UCz$pFz$z$aFz$DHz$z$kCz"
+BURIQ () {
+    curl -sS https://raw.githubusercontent.com/Laksmana27/Tunneling/main/izin > /root/tmp
+    data=( `cat /root/tmp | grep -E "^### " | awk '{print $2}'` )
+    for user in "${data[@]}"
+    do
+    exp=( `grep -E "^### $user" "/root/tmp" | awk '{print $3}'` )
+    d1=(`date -d "$exp" +%s`)
+    d2=(`date -d "$biji" +%s`)
+    exp2=$(( (d1 - d2) / 86400 ))
+    if [[ "$exp2" -le "0" ]]; then
+    echo $user > /etc/.$user.ini
+    else
+    rm -f /etc/.$user.ini > /dev/null 2>&1
+    fi
+    done
+    rm -f /root/tmp
+}
+
+MYIP=$(curl -sS ipv4.icanhazip.com)
+Name=$(curl -sS https://raw.githubusercontent.com/Laksmana27/Tunneling/main/izin | grep $MYIP | awk '{print $2}')
+echo $Name > /usr/local/etc/.$Name.ini
+CekOne=$(cat /usr/local/etc/.$Name.ini)
+
+Bloman () {
+if [ -f "/etc/.$Name.ini" ]; then
+CekTwo=$(cat /etc/.$Name.ini)
+    if [ "$CekOne" = "$CekTwo" ]; then
+        res="Expired"
+    fi
+else
+res="Permission Accepted..."
+fi
+}
+
+PERMISSION () {
+    MYIP=$(curl -sS ipv4.icanhazip.com)
+    IZIN=$(curl -sS https://raw.githubusercontent.com/Laksmana27/Tunneling/main/izin | awk '{print $4}' | grep $MYIP)
+    if [ "$MYIP" = "$IZIN" ]; then
+    Bloman
+    else
+    res="Permission Denied!"
+    fi
+    BURIQ
+}
+red='\e[1;31m'
+green='\e[1;32m'
+NC='\e[0m'
+green() { echo -e "\\033[32;1m${*}\\033[0m"; }
+red() { echo -e "\\033[31;1m${*}\\033[0m"; }
+PERMISSION
+if [ -f /home/needupdate ]; then
+red "Your script need to update first !"
+exit 0
+elif [ "$res" = "Permission Accepted..." ]; then
+echo -ne
+else
+red "Permission Denied!"
+exit 0
+fi
+echo -e "\e[1;32mloading...\e[0m"
+clear
+echo " "
+echo " "
+echo " "
+read -p "Input USERNAME to unlock: " username
+egrep "^$username" /etc/passwd >/dev/null
+if [ $? -eq 0 ]; then
+# proses mengganti passwordnya
+passwd -u $username
+clear
+  echo " "
+  echo " "
+  echo " "
+  echo "-------------------------------------------"
+  echo -e "Username ${blue}$username${NC} successfully ${green}UNLOCKED${NC}."
+  echo -e "Access for Username ${blue}$username${NC} has been restored"
+  echo "-------------------------------------------"
+else
+echo " "
+echo -e "Username ${red}$username${NC} not found in your server."
+echo " "    
+	exit 1
+fi
