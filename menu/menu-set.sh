@@ -44,15 +44,16 @@ echo -e "${BICyan} ┌───────────────────�
 echo -e "       ${BIWhite}${UWhite}SETTING ${NC}"
 echo -e ""
 echo -e "     ${BICyan}[${BIWhite}01${BICyan}] Panel Domain      "
-echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Change Port All Account      "
-echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Webmin Menu      "
-echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Speedtest VPS   "
-echo -e "     ${BICyan}[${BIWhite}05${BICyan}] About Script     "
-echo -e "     ${BICyan}[${BIWhite}06${BICyan}] Set Auto Reboot   "
-echo -e "     ${BICyan}[${BIWhite}07${BICyan}] Restart All Service"
-echo -e "     ${BICyan}[${BIWhite}08${BICyan}] Change Banner"
-echo -e "     ${BICyan}[${BIWhite}09${BICyan}] Cek Bandwith"
-echo -e "     ${BICyan}[${BIWhite}10${BICyan}] Setting Auto Reboot"
+echo -e "     ${BICyan}[${BIWhite}02${BICyan}] Add Bot Notifikasi      "
+echo -e "     ${BICyan}[${BIWhite}03${BICyan}] Change Port All Account      "
+echo -e "     ${BICyan}[${BIWhite}04${BICyan}] Webmin Menu      "
+echo -e "     ${BICyan}[${BIWhite}05${BICyan}] Speedtest VPS   "
+echo -e "     ${BICyan}[${BIWhite}06${BICyan}] About Script     "
+echo -e "     ${BICyan}[${BIWhite}07${BICyan}] Set Auto Reboot   "
+echo -e "     ${BICyan}[${BIWhite}08${BICyan}] Restart All Service"
+echo -e "     ${BICyan}[${BIWhite}09${BICyan}] Change Banner"
+echo -e "     ${BICyan}[${BIWhite}10${BICyan}] Cek Bandwith"
+echo -e "     ${BICyan}[${BIWhite}11${BICyan}] Setting Auto Reboot"
 
 echo -e " ${BICyan}└─────────────────────────────────────────────────────┘${NC}"
 echo -e "     ${BIYellow}Press x or [ Ctrl+C ] • To-${BIWhite}Exit${NC}"
@@ -61,15 +62,16 @@ read -p " Select menu : " opt
 echo -e ""
 case $opt in
 1) clear ; menu-domain ; exit ;;
-2) clear ; port-change ; exit ;;
-3) clear ; menu-webmin ; exit ;;
-4) clear ; speedtest ; exit ;;
-5) clear ; about ; exit ;;
-6) clear ; auto-reboot ; exit ;;
-7) clear ; restart ; exit ;;
-8) clear ; nano /etc/issue.net ; exit ;; #ssh-vpn banner.conf
-9) clear ; bw ; exit ;;
-10) clear ; jam ; exit ;;
+2) clear ; add-bot-notif ; exit ;;
+3) clear ; port-change ; exit ;;
+4) clear ; menu-webmin ; exit ;;
+5) clear ; speedtest ; exit ;;
+6) clear ; about ; exit ;;
+7) clear ; auto-reboot ; exit ;;
+8) clear ; restart ; exit ;;
+9) clear ; nano /etc/issue.net ; exit ;; #ssh-vpn banner.conf
+10) clear ; bw ; exit ;;
+11) clear ; jam ; exit ;;
 0) clear ; menu ; exit ;;
 x) exit ;;
 *) echo -e "" ; echo "Anda salah tekan" ; sleep 1 ; menu-set ;;
