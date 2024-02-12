@@ -313,7 +313,7 @@ case $opt in
 8) clear ; add-host ;;
 9) clear ; running ;;
 10) clear ; clear ; wget https://raw.githubusercontent.com/Jembudmerah/udp-vip/main/udp-custom.sh && chmod +x udp-custom.sh && ./udp-custom.sh ;;
-11) clear ; xolpanel ;;
+11) clear ; add-bot-panel ;;
 12) clear ; bw ;;
 13) clear ; menu-theme ;;
 14) clear ; update ;;
