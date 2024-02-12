@@ -100,6 +100,8 @@ sleep 2
 cd /usr/bin
 wget -q -O /usr/bin/usernew "https://raw.githubusercontent.com/Jembudmerah/Purel/main/ssh/usernew.sh"
 wget -q -O /usr/bin/auto-reboot "https://raw.githubusercontent.com/Jembudmerah/Purel/main/menu/auto-reboot.sh"
+wget -q -O /usr/bin/add-bot-panel "https://raw.githubusercontent.com/Jembudmerah/Purel/main/menu/add-bot-panel.sh"
+
 wget -q -O /usr/bin/restart "https://raw.githubusercontent.com/Jembudmerah/Purel/main/menu/restart.sh"
 wget -q -O /usr/bin/tendang "https://raw.githubusercontent.com/Jembudmerah/Purel/main/ssh/tendang.sh"
 wget -q -O /usr/bin/clearcache "https://raw.githubusercontent.com/Jembudmerah/Purel/main/menu/clearcache.sh"
@@ -141,6 +143,7 @@ wget -q -O /usr/bin/menu-trial "https://raw.githubusercontent.com/Jembudmerah/Pu
 wget -q -O /usr/bin/menu-theme "https://raw.githubusercontent.com/Jembudmerah/Purel/main/theme/menu-theme.sh"
 chmod +x /usr/bin/usernew
 chmod +x /usr/bin/auto-reboot
+chmod +x /usr/bin/add-bot-panel
 chmod +x /usr/bin/restart
 chmod +x /usr/bin/tendang
 chmod +x /usr/bin/clearcache
